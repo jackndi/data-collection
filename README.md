@@ -8,26 +8,26 @@ To run the `production` server clone the repository to your system and create th
 First install module not available in pip used to generate qrcode for two factor authenticaton.
 
 * ``` pip install git+git://github.com/ojii/pymaging.git#egg=pymaging ```
-* ```pip install git+git://github.com/ojii/pymaging-png.git#egg=pymaging-png```
+*```pip install git+git://github.com/ojii/pymaging-png.git#egg=pymaging-png```
 
 Then install pandas used to export data from django admin in format of `EXCEL`, `JSON`,`YAML`, `HTML`, `TSV`, `CSV`, `ODT` .
 
 * ``` sudo apt-get install python-pandas ```
 
-make sure to add swap memory for about 2GB as pandas requirements.
+make sure you have 2GB ram or add swap memory as pandas requirements.
 Create virtualenv and activate it run the following command.
 
 ```pip install -r requirements.txt```
 
-```Python manage.py makemigration ?settings=settings.production```
+```Python manage.py makemigration --settings=settings.production```
 
-```python manage.py migrate ?settings=settings.production```
+```python manage.py migrate --settings=settings.production```
 
-```python manage.py createsuperuser ?settings=settings.production```
+```python manage.py createsuperuser --settings=settings.production```
 
 to start the server run
 
-```python manage.py runserver ?settings=settings.production```
+```python manage.py runserver --settings=settings.production```
 
 And run the unit test with the following command
 
