@@ -5,15 +5,15 @@ Data Collection Api
 
 To run the `production` server clone the repository to your system and create the `.env` file as per the example `.env.example` . This file will contain information that is supposed to be secret. You should now be able to run the following command.
 
-```Python manage.py makemigration ?settings=settings.production```
+```Python manage.py makemigration --settings=settings.production```
 
-```python manage.py migrate ?settings=settings.production```
+```python manage.py migrate --settings=settings.production```
 
-```python manage.py createsuperuser ?settings=settings.production```
+```python manage.py createsuperuser --settings=settings.production```
 
 to start the server run
 
-```python manage.py runserver ?settings=settings.production```
+```python manage.py runserver --settings=settings.production```
 
 And run the unit test with the following command
 
