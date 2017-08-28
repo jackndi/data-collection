@@ -8,23 +8,17 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*', ]
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'dukaconnect',
-#         'USER': 'duka_user',
-#         'PASSWORD': '#8#!e5mxjd*bfd@pg-ybvnk9ke-?afyas%!_$wg-ft=+f5',
-#         'HOST': '',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
+        'PORT': '',
     }
 }
+
 
 EMAIL_HOST = config('EMAIL_HOST', default='localhost')
 EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
