@@ -8,7 +8,7 @@ To run the `production` server clone the repository to your system and create th
 First install module not available in pip used to generate qrcode for two factor authenticaton.
 
 * ``` pip install git+git://github.com/ojii/pymaging.git#egg=pymaging ```
-*```pip install git+git://github.com/ojii/pymaging-png.git#egg=pymaging-png```
+* ```pip install git+git://github.com/ojii/pymaging-png.git#egg=pymaging-png```
 
 Then install pandas used to export data from django admin in format of `EXCEL`, `JSON`,`YAML`, `HTML`, `TSV`, `CSV`, `ODT` .
 
@@ -35,7 +35,7 @@ And run the unit test with the following command
 
 ## Running Local develoment server
 
-Don?t need to create `.env` file , just run the following command
+Don\'t need to create `.env` file , just run the following command
 
 ```python manage.py makemigrations```
 
